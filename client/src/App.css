@@ -1,0 +1,68 @@
+.App {
+  text-align: center;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(to top, #ffc0cb 0%, #c3cde6);
+}
+
+.calculator-grid {
+  display: grid;
+  margin-top: 2rem;
+  grid-template-columns: repeat(4, 6rem);
+  grid-template-rows: minmax(7rem, auto) repeat(5, 6rem);
+  cursor: pointer;
+}
+
+.span-two {
+  grid-column: span 2;
+  color: black;
+  padding: 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 25px;
+}
+.output {
+  grid-column: 1/-1;
+  background-color: rgba(102, 51, 153, 0.25);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+
+.output .previous-operand {
+  font-size: 30px;
+  color: white;
+}
+
+.output .current-operand {
+  color: white;
+  font-size: 30px;
+}
+
+.button {
+  color: black;
+  padding: 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+.button:hover {
+  background-color: rgba(213, 184, 255, 0.55);
+}
