@@ -2,7 +2,6 @@
 
 This a front end application uses ReactJS with the useReducer hook to manage state. All styling is written in CSS. This application is responsive in any device. 
 
-To run the app, in the terminal run: "npm start"
 
 As a User...
 I want to execute basic arithemtic functions 
