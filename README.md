@@ -7,7 +7,7 @@ As a User...
 I want to execute basic arithemtic functions 
 So that it will decrease the time to do calculations
 
-
+To start the app in the terminal, enter 'npm start'
 
 <img width="1438" alt="Screen Shot 2022-11-08 at 11 12 56 PM" src="https://user-images.githubusercontent.com/64618285/200876116-ef3a5c91-e3f9-435c-be45-e91e5ef028c4.png">
 
