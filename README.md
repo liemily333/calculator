@@ -1,8 +1,8 @@
-# Calculator App for SS%C Associate Software Engineer Position
+# Calculator App for Associate Software Engineer position at SS&C Technologies
 
-This a front end application uses ReactJS with the useReducer hook to manage state. All styling is written in CSS. This application is responsive in any devices. 
+This a front end application uses ReactJS with the useReducer hook to manage state. All styling is written in CSS. This application is responsive in any device. 
 
-#To run the app, in the terminal run: "npm start"
+To run the app, in the terminal run: "npm start"
 
 As a User...
 I want to execute basic arithemtic functions 
