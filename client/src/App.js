@@ -13,14 +13,15 @@ export default function App() {
 
   return (
     <div className="App">
-      <div className="name">
-        <div className="calculator-grid">
-          <div className="output">
-            <div className="previous-operand">
-              {previousValue} {operation}
-            </div>
-            <div className="current-operand">{currentValue}</div>
+      <div className="calculator-grid">
+        <div className="output">
+          <div className="previous-operand">
+            {previousValue} {operation}
           </div>
+          <div className="current-operand">{currentValue}</div>
+        </div>
+
+        <div className="spanTwoButtons">
           <button
             className="span-two"
             onClick={() => dispatch({ type: ACTIONS.CLEAR })}
@@ -33,6 +34,8 @@ export default function App() {
           >
             DEL
           </button>
+        </div>
+        <div className="buttonGroup">
           <OperationButton dispatch={dispatch} operation="+" />
           <DigitButton dispatch={dispatch} digit="1" />
           <DigitButton dispatch={dispatch} digit="2" />
@@ -48,12 +51,12 @@ export default function App() {
           <OperationButton dispatch={dispatch} operation="/" />
           <DigitButton dispatch={dispatch} digit="." />
           <DigitButton dispatch={dispatch} digit="0" />
+
           <button
             className="button"
             onClick={() => dispatch({ type: ACTIONS.EQUALS })}
           >
-            {' '}
-            ={' '}
+            =
           </button>
         </div>
       </div>

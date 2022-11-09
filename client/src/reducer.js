@@ -34,7 +34,7 @@ export default function reducer(state, { type, payload }) {
           overwrite: false,
         };
       }
-      //it checks if there's already a 0 consecutively or multiple .
+      //it checks if there's already a 0 consecutively or multiple periods
       if (payload.digit === '0' && state.currentValue === '0') return state;
       if (payload.digit === '.' && state.currentValue.includes('.'))
         return state;
@@ -61,7 +61,7 @@ export default function reducer(state, { type, payload }) {
         return { ...state, operation: payload.operation };
       }
 
-      //default action
+      //default
       return {
         ...state,
         previousValue: evaluate(state),
@@ -72,7 +72,7 @@ export default function reducer(state, { type, payload }) {
       return {};
 
     case ACTIONS.EQUALS:
-      //if any of the state is empty then do nothing because we can't hit equal if its 15 -
+      //if any of the state is empty then do nothing. ex: "15 - "" it's missing the currentValue
       if (
         state.operation == null ||
         state.currentValue == null ||
