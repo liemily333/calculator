@@ -34,10 +34,9 @@ export default function reducer(state, { type, payload }) {
           overwrite: false,
         };
       }
-      //it checks if there's already a 0 consecutively or multiple periods
+      //to diallow user from hitting multiple 0 in the beginning of calculation
       if (payload.digit === '0' && state.currentValue === '0') return state;
-      if (payload.digit === '.' && state.currentValue.includes('.'))
-        return state;
+
       return {
         ...state,
         currentValue: `${state.currentValue || ''}${payload.digit}`,
